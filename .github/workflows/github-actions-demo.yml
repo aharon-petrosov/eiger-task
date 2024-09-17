@@ -1,6 +1,13 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches:
+      - ci/cd
+    paths-ignore:
+      - '1/**'
+      - '2/**'
+      - '!1/test/**'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
