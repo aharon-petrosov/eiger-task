@@ -19,4 +19,4 @@ function commonPrefix(inputs) {
 const inputs = ['abcabcd','ababaa'];
 
 const results = commonPrefix(inputs);
-console.log(results);
+console.log({results});
